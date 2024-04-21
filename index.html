@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,14 @@
             margin: 0px;
             padding: 0px;
         }
+        p, a {
+            color: white;
+        }
         body {
             margin: 0px;
             padding: 0px;
         }
+
         main {
             margin: 0px;
             padding: 0px;
@@ -25,36 +30,65 @@
             height: 200px;
             width: 200px;
         }
+
         #ios {
             height: 50;
         }
+
         #container {
             display: flex;
+            flex-direction: column;
             height: 100vh;
+            width: 100vw;
             align-items: center;
             justify-content: center;
         }
+
         #subcontainer {
             display: flex;
+            height: auto;
             flex-direction: column;
             align-items: center;
         }
+
+        #tos {
+            position: absolute;
+            bottom: 0px;
+            color: white;
+            padding-bottom: 20px;
+            display: flex;
+        }
+
+        #tos a {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     </style>
 </head>
+
 <body>
     <main>
         <div id="container">
             <div id="subcontainer">
-            <img id="logo" src="https://amehrdad88.github.io/beeksi.github.io/e335cc96fcadc450683b90e1bb1b74c8.png" alt=""/>
-            <div>
-                <a href="https://apps.apple.com/us/app/beeksi/id6473766179">
-                <img id="ios" src="https://amehrdad88.github.io/beeksi.github.io/ios.svg" alt=""/>
-                </a>
+                <img id="logo" src="https://amehrdad88.github.io/beeksi.github.io/e335cc96fcadc450683b90e1bb1b74c8.png"
+                    alt="" />
+                <div>
+                    <a href="https://apps.apple.com/us/app/beeksi/id6473766179">
+                        <img id="ios" src="https://amehrdad88.github.io/beeksi.github.io/ios.svg" alt="" />
+                    </a>
+                </div>
+                <div>
+                    <p>Need help? <a href="mailto:contact@beeksi.com">contact@beeksi.com</a></p>
+                </div>
             </div>
+            <div id="tos">
+                <a href="https://beeksi.com/tos">Terms Of Service</a>
+                <a href="https://beeksi.com/privacy">Privacy Policy</a>
             </div>
-
         </div>
+        
     </main>
-    
+
 </body>
+
 </html>
